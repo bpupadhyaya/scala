@@ -1,4 +1,4 @@
-package com.equalinformation.java.tutorial;
+package com.equalinformation.tutorial.java;
 
 /**
  * Created by bpupadhyaya on 9/1/15.
