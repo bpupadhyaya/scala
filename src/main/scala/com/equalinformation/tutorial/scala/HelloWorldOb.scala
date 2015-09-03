@@ -1,4 +1,4 @@
-package com.equalinformation.scala.tutorial
+package com.equalinformation.tutorial.scala
 
 /**
  * Created by bpupadhyaya on 9/1/15.
