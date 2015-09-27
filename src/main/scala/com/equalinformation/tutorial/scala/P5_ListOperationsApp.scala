@@ -6,7 +6,7 @@ package com.equalinformation.tutorial.scala
 object P5_ListOperationsApp {
   def main(args: Array[String]): Unit = {
     // Create a new list
-    val twoCities = List("Sunnyvale, Stanford")
+    val twoCities = List("Sunnyvale", "Stanford")
     val anotherTwoCities = List("Berkeley", "Oakland")
 
     // List concatenation
@@ -25,7 +25,26 @@ object P5_ListOperationsApp {
     val newList = "this" :: "is" :: Nil
     println(newList)
 
-    //TODO more list operations here
+    // Count the number of elements having specified length
+    println(fourCities.count(s => s.length == 8))
+
+    // Check existence
+    println(fourCities.exists(s => s == "Sunnyvale"))
+
+    //Filter
+    println(fourCities.filter(s => s.length == 8))
+
+    //Modification
+    println(fourCities.map(s => s+" city"))
+
+    //List to string
+    println(fourCities.mkString("*"))
+
+    //Order reversal
+    println(fourCities, fourCities.reverse)
+
+    //Sorting
+    println(fourCities.sorted)
 
   }
 
