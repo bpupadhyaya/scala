@@ -1,13 +1,13 @@
 package com.equalinformation.tutorial.scala.test
 
-import com.equalinformation.tutorial.scala.MiscClass
+import com.equalinformation.tutorial.scala.MiscClassForUnitTesting
 
 /**
  * Created by bpupadhyaya on 9/27/15.
  */
 class MiscSpec extends UnitSpec {
-  val miscObj = new MiscClass(4,5)
-  val miscObj1 = new MiscClass(4,0)
+  val miscObj = new MiscClassForUnitTesting(4,5)
+  val miscObj1 = new MiscClassForUnitTesting(4,0)
 
   "add" should "produce sum of two numbers" in {
     assert(miscObj.add() == 9)
