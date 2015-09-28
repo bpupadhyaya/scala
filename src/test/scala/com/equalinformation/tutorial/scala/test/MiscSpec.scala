@@ -13,7 +13,6 @@ class MiscSpec extends UnitSpec {
   "add" should "produce sum of two numbers" in {
     assert(miscObj.add() == 9)
   }
-
   // Or
   assertResult(9) {
     miscObj.add()
@@ -38,6 +37,13 @@ class MiscSpec extends UnitSpec {
     intercept[ArithmeticException] {
       miscObj1.divide()
     }
+  }
+  // Or
+  try {
+    miscObj1.divide()
+    fail()
+  } catch {
+    case _: ArithmeticException => // continue
   }
 
 }
