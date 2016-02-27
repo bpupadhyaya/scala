@@ -5,7 +5,7 @@ package com.equalinformation.tutorial.scala.pattern_matching
   */
 object LowercaseConstantDemo extends App {
   val someRandomValue = "test"
-  val input = "testT"
+  val input = "test"
 
   input match {
     case `someRandomValue` => println("someRandomValue 'test' matches with input: "+input)
