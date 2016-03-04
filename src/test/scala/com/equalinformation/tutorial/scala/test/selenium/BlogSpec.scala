@@ -14,10 +14,10 @@ class BlogSpec extends FlatSpec with ShouldMatchers with WebBrowser {
 
   implicit val webDriver: WebDriver = new HtmlUnitDriver
 
-  val host = "http://www.equalinformation.com"
+  val host = "http://www.google.com"
 
   "The EqualInformation home page" should "have the correct title" in {
-    go to (host + "index.html")
-    pageTitle should be ("")
+    go to (host)
+    pageTitle should be ("Google")
   }
 }
