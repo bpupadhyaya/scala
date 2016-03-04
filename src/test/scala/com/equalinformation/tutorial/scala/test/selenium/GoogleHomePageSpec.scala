@@ -10,7 +10,7 @@ import org.scalatest.selenium.WebBrowser
   * Created by bpupadhyaya on 3/3/16.
   */
 
-class BlogSpec extends FlatSpec with ShouldMatchers with WebBrowser {
+class GoogleHomePageSpec extends FlatSpec with ShouldMatchers with WebBrowser {
 
   implicit val webDriver: WebDriver = new HtmlUnitDriver
 
