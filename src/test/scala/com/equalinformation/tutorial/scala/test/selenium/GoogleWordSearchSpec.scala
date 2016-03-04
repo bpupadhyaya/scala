@@ -10,7 +10,7 @@ class GoogleWordSearchSpec extends FlatSpec with ShouldMatchers with HtmlUnit {
 
   val host = "http://www.google.com"
 
-  "The google home page" should "have the correct title" in {
+  "The google search" should "have the correct title" in {
     go to (host)
     click on "q"
     textField("q").value = "selenium"
