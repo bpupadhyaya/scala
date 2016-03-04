@@ -16,7 +16,7 @@ class BlogSpec extends FlatSpec with ShouldMatchers with WebBrowser {
 
   val host = "http://www.google.com"
 
-  "The EqualInformation home page" should "have the correct title" in {
+  "The google home page" should "have the correct title" in {
     go to (host)
     pageTitle should be ("Google")
   }
